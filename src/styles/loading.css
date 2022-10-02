@@ -1,0 +1,55 @@
+.loading{
+    width: 80px;
+    height: 80px;
+    margin: 5px auto;
+    position: relative;
+}
+
+.loading div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+}
+
+.v2 div:nth-child(1){
+    left: 0;
+    animation: Scale 0.5s linear infinite;
+    animation-direction: alternate;
+}
+
+.v2 div:nth-child(2){
+    left: 30px;
+    animation: Scale 0.5s linear infinite;
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+
+}
+
+.v2 div:nth-child(3){
+    left: 60px;
+    animation: Scale 0.5s linear infinite;
+    animation-delay: 0.8s;
+    animation-direction: alternate;
+
+}
+
+
+@keyframes Scale {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.7);
+    }
+}
+
+
+@media (max-width: 880px){
+    .loading div{
+        width: 16px;
+        height: 16px;
+    }
+}

@@ -1,0 +1,62 @@
+.mainContainer{
+    width: 100%;
+    min-height: 500px;
+    /* background-color: #282457; */
+}
+
+.innerMain{
+    width: 85%;
+    min-height: 300px;
+    background-color: #120d46;
+    border-radius: 40px;
+    margin: 40px auto;
+}
+.searchBox{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.searchBox input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+    border: none;
+    font-size: 1rem;
+    color: #120d46;
+    font-family: Righteous;
+}
+
+.searchBox input:focus{
+    outline: none;
+}
+
+.searchBox input::placeholder{
+    color: #120d469d;
+}
+
+.showCoins{
+    margin: 30px auto 20px auto;
+}
+
+@media (max-width: 900px) {
+    .innerMain{
+        width: 95%;
+    }
+    .searchBox{
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .innerMain{
+        width: 98%;
+    }
+    .searchBox{
+        width: 70%;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,61 @@
+.coinContainer{
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5px auto;
+    padding: 15px 5px;
+    border-bottom: 1px solid #afafaf;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+    /* font-family: Righteous; */
+}
+
+.coinContainer div:not(.coinImage){
+    text-align: left;
+    width: 60%;
+}
+
+.coinImage{
+    width: 40%;
+    padding-right: 5px;
+}
+
+.coinImage img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.coinSymbol{
+    color: #f7c201;
+}
+
+.coinName{
+    width: 100% !important;
+}
+
+.unitPrice{
+    font-size: 0.8rem;
+    color: #f7c201;
+}
+
+@media (max-width: 768px) {
+    .coinSymbol{
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .coinContainer div{
+        font-size: 0.85rem;
+        margin: 0 5px;
+    }
+
+    .coinMarketCap{
+        display: none;
+    }
+}
